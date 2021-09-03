@@ -1,0 +1,36 @@
+{
+  "name": "@iampavangandhi/eslint-config",
+  "version": "1.0.0",
+  "description": "ESLint & Prettier config for React & Next.js",
+  "main": "index.js",
+  "scripts": {
+    "style:all": "npm run style:lint && npm run style:prettier",
+    "style:lint": "eslint --ignore-path .gitignore '**/*.{js,jsx,ts,tsx}'",
+    "style:prettier": "prettier --check '**/*.{js,jsx,ts,tsx}'",
+    "make-pretty": "prettier --write '**/*.{js,jsx,ts,tsx}'",
+    "test:lint": "eslint --ignore-path .gitignore .",
+    "prepare": "husky install"
+  },
+  "keywords": [
+    "config",
+    "eslint",
+    "lint",
+    "nextjs",
+    "prettier"
+  ],
+  "peerDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.24.2",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.25.1",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "eslint-plugin-simple-import-sort": "^7.0.0",
+    "husky": "^7.0.2",
+    "prettier": "^2.3.2"
+  },
+  "author": "Pavan Gandhi <pavangandhi100@gmail.com>",
+  "license": "MIT"
+}
