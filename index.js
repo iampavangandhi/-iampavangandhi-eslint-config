@@ -3,13 +3,7 @@ const next = require('./lib/next.js');
 const react = require('./lib/react.js');
 
 module.exports = {
-  extends: [
-    'plugin:import/errors',
-    'plugin:import/warnings',
-    'airbnb',
-    'airbnb/hooks',
-    'plugin:prettier/recommended',
-  ],
+  extends: ['airbnb', 'airbnb/hooks', 'plugin:prettier/recommended'],
   env: {
     browser: true,
     commonjs: true,
