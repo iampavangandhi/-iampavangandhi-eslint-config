@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-iampavangandhi",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "ESLint & Prettier config for React & Next.js",
   "main": "index.js",
   "files": [
