@@ -11,12 +11,14 @@ module.exports = {
     node: true,
     jest: true,
   },
+  parser: "@babel/eslint-parser",
   parserOptions: {
     ecmaVersion: 2021,
     sourceType: "module",
     ecmaFeatures: {
       jsx: true,
     },
+    requireConfigFile: false,
   },
   plugins: ["simple-import-sort", "import"],
   rules: {
@@ -34,5 +36,5 @@ module.exports = {
       version: "detect",
     },
   },
-  parser: "babel-eslint",
+  ignorePatterns: ["node_modules/"],
 };
