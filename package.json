@@ -1,26 +1,14 @@
 {
   "name": "eslint-config-iampavangandhi",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "ESLint & Prettier config for React & Next.js",
   "main": "index.js",
   "files": [
     "LICENSE",
     "README.md",
     "index.js",
-    "lib",
-    ".eslintignore",
-    ".prettierrc",
-    ".prettierignore"
+    "lib"
   ],
-  "scripts": {
-    "style:all": "npm run style:lint && npm run style:prettier",
-    "style:lint": "eslint --ignore-path .gitignore '**/*.{js,jsx,ts,tsx,json}'",
-    "style:lint-all": "eslint --ignore-path .gitignore .",
-    "style:prettier": "prettier --check '**/*.{js,jsx,ts,tsx,json}'",
-    "style:prettier-all": "prettier --check .",
-    "make-pretty": "prettier --write '**/*.{js,jsx,ts,tsx,json}'",
-    "make-pretty-all": "prettier --write ."
-  },
   "keywords": [
     "config",
     "eslint",
@@ -28,9 +16,15 @@
     "nextjs",
     "prettier"
   ],
+  "scripts": {
+    "style:all": "npm run style:lint && npm run style:prettier",
+    "style:lint": "eslint --ignore-path .gitignore '**/*.{js,jsx,ts,tsx,json}'",
+    "style:lint-fix": "eslint --fix --ignore-path .gitignore '**/*.{js,jsx,ts,tsx}'",
+    "style:prettier": "prettier --check '**/*.{js,jsx,ts,tsx,json}'",
+    "make-pretty": "prettier --write '**/*.{js,jsx,ts,tsx,json}'",
+    "make-pretty-all": "prettier --write ."
+  },
   "peerDependencies": {
-    "@babel/core": "^7.14.0",
-    "babel-plugin-module-resolver": "^4.1.0",
     "eslint": "^7.32.0",
     "eslint-config-airbnb": "^18.2.1",
     "eslint-config-prettier": "^8.3.0",
@@ -43,5 +37,13 @@
     "prettier": "^2.3.2"
   },
   "author": "Pavan Gandhi <pavangandhi100@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iampavangandhi/eslint-config.git"
+  },
+  "bugs": {
+    "url": "https://github.com/iampavangandhi/eslint-config/issues"
+  },
+  "homepage": "https://github.com/iampavangandhi/eslint-config#readme"
 }
