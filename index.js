@@ -1,9 +1,9 @@
-const base = require('./lib/base.js');
-const next = require('./lib/next.js');
-const react = require('./lib/react.js');
+const base = require("./lib/base.js");
+const next = require("./lib/next.js");
+const react = require("./lib/react.js");
 
 module.exports = {
-  extends: ['airbnb', 'airbnb/hooks', 'plugin:prettier/recommended'],
+  extends: ["airbnb", "airbnb/hooks", "plugin:prettier/recommended"],
   env: {
     browser: true,
     commonjs: true,
@@ -13,25 +13,26 @@ module.exports = {
   },
   parserOptions: {
     ecmaVersion: 2021,
-    sourceType: 'module',
+    sourceType: "module",
     ecmaFeatures: {
       jsx: true,
     },
   },
-  plugins: ['simple-import-sort', 'import'],
+  plugins: ["simple-import-sort", "import"],
   rules: {
     ...base,
     ...next,
     ...react,
   },
   settings: {
-    'import/resolver': {
+    "import/resolver": {
       node: {
-        moduleDirectory: ['node_modules', 'src/'],
+        moduleDirectory: ["node_modules", "./"],
       },
     },
     react: {
-      version: 'detect',
+      version: "detect",
     },
   },
+  parser: "babel-eslint",
 };
