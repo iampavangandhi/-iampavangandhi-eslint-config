@@ -19,6 +19,9 @@ module.exports = {
       jsx: true,
     },
     requireConfigFile: false,
+    babelOptions: {
+      presets: ["@babel/preset-react"],
+    },
   },
   plugins: ["simple-import-sort", "import"],
   rules: {
