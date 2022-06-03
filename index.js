@@ -1,5 +1,4 @@
 const base = require("./lib/base.js");
-const next = require("./lib/next.js");
 const react = require("./lib/react.js");
 
 module.exports = {
@@ -23,10 +22,9 @@ module.exports = {
       presets: ["@babel/preset-react"],
     },
   },
-  plugins: ["simple-import-sort", "import"],
+  plugins: ["simple-import-sort", "import", "react-hooks"],
   rules: {
     ...base,
-    ...next,
     ...react,
   },
   settings: {
